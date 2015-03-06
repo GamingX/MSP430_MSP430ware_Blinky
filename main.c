@@ -10,9 +10,9 @@ int main(void) {
 	GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0); //Setting P1.0 as Output Pin
 	
 	while(1){
-		setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
+		GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN0);
 		_delay_cycles(ONE_SECOND);
-		setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
+		GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
 		_delay_cycles(ONE_SECOND);
 	}
 	return 0;
