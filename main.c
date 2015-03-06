@@ -14,8 +14,6 @@ int main(void) {
 		_delay_cycles(ONE_SECOND);
 		GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN0);
 		_delay_cycles(ONE_SECOND);
-
-		return 0;
 	}
-
+	return 0;
 }
